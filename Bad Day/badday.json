@@ -1,0 +1,40 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "i'm having a bad day",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "CheerUpIntent",
+                    "slots": [],
+                    "samples": [
+                        "I'm sad",
+                        "I don't feel so good",
+                        "I'm unhappy",
+                        "this day sucks"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
