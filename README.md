@@ -1,3 +1,5 @@
+![logo image](CheerUpLogo.png)
+
 # Inspiration
 The idea for CheerUP is inspired and brings to mind by the growing number of university students who are struggling with depression and stress. The students are often required to face challenges not only in their academic studies but also in their daily lives. We, as university students, saw this problem and decided to put an end to this situation. This is how CheerUP was created.
 
