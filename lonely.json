@@ -1,0 +1,43 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "i'm lonely",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "ComfortIntent",
+                    "slots": [],
+                    "samples": [
+                        "everyone hates me",
+                        "I have no friends",
+                        "I feel lonely",
+                        "keep me company",
+                        "I'm feeling lonely",
+                        "I miss my friends",
+                        "I'm so lonely"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
