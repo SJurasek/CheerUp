@@ -19,7 +19,7 @@ There are many accomplishments that we are particularly proud of. This is our fi
 We have learned many new skills and techniques from this experience, including AWS, Alexa skills, Node.js, and JSON.
 
 ## Built With
-amazon-web-services
-amazon-alexa
-node.js
+amazon-web-services,
+amazon-alexa,
+node.js,
 json
