@@ -1,0 +1,166 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "what should i do",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "GetNewFactIntent",
+                    "slots": [
+                        {
+                            "name": "numBadThings",
+                            "type": "AMAZON.NUMBER",
+                            "samples": [
+                                "{numBadThings}",
+                                "I had {numBadThings} happen to me",
+                                "{numBadThings} things"
+                            ]
+                        },
+                        {
+                            "name": "feelScale",
+                            "type": "AMAZON.NUMBER",
+                            "samples": [
+                                "I am feeling like a {feelScale} today",
+                                "I am feeling like a {feelScale}",
+                                "A {feelScale}"
+                            ]
+                        },
+                        {
+                            "name": "goalFeelScale",
+                            "type": "AMAZON.NUMBER",
+                            "samples": [
+                                "i really want to be a {goalFeelScale}",
+                                "I want to be a {goalFeelScale}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "cheer me up",
+                        "feel terrible",
+                        "feeling bad",
+                        "Ask me about my day"
+                    ]
+                }
+            ],
+            "types": []
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "GetNewFactIntent",
+                    "confirmationRequired": true,
+                    "prompts": {
+                        "confirmation": "Confirm.Intent.1070590951336"
+                    },
+                    "slots": [
+                        {
+                            "name": "numBadThings",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": true,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "confirmation": "Confirm.Slot.1070590951336.445367853328",
+                                "elicitation": "Elicit.Slot.1070590951336.445367853328"
+                            }
+                        },
+                        {
+                            "name": "feelScale",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": true,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "confirmation": "Confirm.Slot.1070590951336.1389962234656",
+                                "elicitation": "Elicit.Slot.1070590951336.1389962234656"
+                            }
+                        },
+                        {
+                            "name": "goalFeelScale",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": true,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "confirmation": "Confirm.Slot.1070590951336.1399322300254",
+                                "elicitation": ""
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Slot.1070590951336.445367853328",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Tell me how many bad things happened to you today?"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Slot.1070590951336.445367853328",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Really. {numBadThings} bad things?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Don't worry, I am here for you. So you had {numBadThings} happen to you today?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1070590951336.1389962234656",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "On a scale of one to ten, with ten being the best, how are you feeling today?"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Slot.1070590951336.1389962234656",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "You feel like a {feelScale} today?"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Slot.1070590951336.1399322300254",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Great. So you want to be a {goalFeelScale}"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Intent.1070590951336",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "So you had {numBadThings} happen to you, you currently feel like a {feelScale} on a scale of one to ten, and your would like to feel like a {goalFeelScale} correct?"
+                    }
+                ]
+            }
+        ]
+    }
+}
