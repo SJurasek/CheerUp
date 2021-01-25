@@ -1,0 +1,42 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "i have an exam",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "ExamHypeIntent",
+                    "slots": [],
+                    "samples": [
+                        "I am scared for my exam",
+                        "I have an exam this morning",
+                        "I have an exam tonight",
+                        "I have an exam tomorrow",
+                        "I have an exam today",
+                        "I have an exam"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
